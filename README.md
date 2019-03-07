@@ -28,3 +28,15 @@ nvm install node
 # rvm
 
 \curl -sSL https://get.rvm.io | bash
+
+# Mongo
+
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
+
+# Redis
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04
+
+# PG
+
+
