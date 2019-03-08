@@ -46,7 +46,7 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-
 
 sudo apt-get update
 
-sudo apt-get install postgresql-9.4 pgadmin3
+sudo apt-get install postgresql-11 pgadmin3
 
 ## Alterando a senha para o usuario postgres
 
@@ -55,3 +55,13 @@ sudo passwd postgres
 su postgres 
 
 psql -c "ALTER USER postgres WITH PASSWORD 'nova_senha'" -d template1 
+
+
+sudo apt-get install default-jre
+
+sudo apt-get install default-jdk
+
+snap install heroku --classic
+
+snap install android-studio --classic
+
