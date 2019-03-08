@@ -62,6 +62,3 @@ sudo apt-get install default-jre
 sudo apt-get install default-jdk
 
 snap install heroku --classic
-
-snap install android-studio --classic
-
