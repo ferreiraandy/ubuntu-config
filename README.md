@@ -54,8 +54,46 @@ psql -c "ALTER USER postgres WITH PASSWORD 'nova_senha'" -d template1
 
 # JRE JDK
 
-sudo apt-get install default-jre
+sudo add-apt-repository ppa:webupd8team/java
 
-sudo apt-get install default-jdk
+sudo apt update; sudo apt install oracle-java8-installer
+
+javac -version
+
+sudo apt install oracle-java8-set-default
+
+# Gradle
+
+wget https://services.gradle.org/distributions/gradle-5.0-bin.zip -P /tmp
+
+
+sudo unzip -d /opt/gradle /tmp/gradle-*.zip
+
+ls /opt/gradle/gradle-5.0
+
+> should show something like: bin  getting-started.html  init.d  lib  LICENSE  media  NOTICE
+
+sudo vim /etc/profile.d/gradle.sh
+
+paste:
+
+export GRADLE_HOME=/opt/gradle/gradle-5.0
+export PATH=${GRADLE_HOME}/bin:${PATH}
+
+sudo chmod +x /etc/profile.d/gradle.sh
+
+source /etc/profile.d/gradle.sh
+
+gradle -v
+
+# Android Studio/SDK
+
+Install via software center or apt
+
+After install acept licenses:
+
+~./Android/Sdk/tools/bin/sdkmanager --licenses
+
+# Heroku
 
 snap install heroku --classic
