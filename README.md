@@ -34,6 +34,8 @@ nvm install node
 
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
 
+$ systemctl enable mongod.service
+
 # Redis
 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-redis-on-ubuntu-16-04
