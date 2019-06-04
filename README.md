@@ -2,13 +2,17 @@ sudo apt install vim
 
 sudo apt install git
 
+sudo apt-get install xclip
+
+sudo apt install curl
+
+sudo apt install snap
+
 # Generate key ssh
 
 ssh-keygen -t rsa -b 4096 -C "your_email@gmail.com"
 
 # Adding a new SSH key to your GitHub account
-
-sudo apt-get install xclip
 
 # Copies the contents of the id_rsa.pub file to your clipboard
 xclip -sel clip < ~/.ssh/id_rsa.pub
@@ -17,8 +21,6 @@ xclip -sel clip < ~/.ssh/id_rsa.pub
 https://github.com/ferreiraandy/.vim
 
 # Install nvm
-
-sudo apt install curl
 
 https://github.com/creationix/nvm#install--update-script
 
@@ -29,12 +31,6 @@ nvm install node
 # rvm
 
 \curl -sSL https://get.rvm.io | bash
-
-# Mongo
-
-https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/
-
-$ systemctl enable mongod.service
 
 # Redis
 
@@ -48,11 +44,11 @@ sudo apt-get install postgresql
 
 ## Alterando a senha para o usuario postgres
 
-sudo passwd postgres 
+sudo passwd postgres
 
-su postgres 
+su postgres
 
-psql -c "ALTER USER postgres WITH PASSWORD 'nova_senha'" -d template1 
+psql -c "ALTER USER postgres WITH PASSWORD 'nova_senha'" -d template1
 
 # JRE JDK
 
@@ -67,7 +63,6 @@ sudo apt install oracle-java8-set-default
 # Gradle
 
 wget https://services.gradle.org/distributions/gradle-5.0-bin.zip -P /tmp
-
 
 sudo unzip -d /opt/gradle /tmp/gradle-*.zip
 
