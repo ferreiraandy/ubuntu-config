@@ -8,6 +8,11 @@ CHROME_DRIVER_VERSION=`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEA
 npm -g uninstall chromedriver
 
 sudo apt-get remove google-chrome-stable
+sudo apt-get purge google-chrome-stable
+sudo apt autoremove
+sudo apt autoclean
+sudo apt clean
+
 rm ~/selenium-server-standalone-*.jar
 rm ~/chromedriver_linux64.zip
 sudo rm /usr/local/bin/chromedriver
@@ -15,6 +20,9 @@ sudo rm /usr/local/bin/selenium-server-standalone.jar
 
 # Install dependencies.
 sudo apt-get update
+
+# older versions:
+# https://github.com/webnicer/chrome-downloads/tree/master/x64.deb
 
 # Install Chrome.
 sudo curl -sS -o - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add
